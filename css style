@@ -1,0 +1,65 @@
+CSS (styles.css):
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#chat-output {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    overflow-y: auto;
+}
+
+#user-input {
+    width: calc(100% - 62px);
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
