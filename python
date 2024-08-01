@@ -1,0 +1,21 @@
+Chatbot with Python:
+from flask import Flask, request, jsonify
+import random
+
+app = Flask(_name_)
+
+responses = {
+    "hello": "Hello! How can I help you today?",
+    "how are you": "I'm just a bot, but I'm here to assist you!",
+    "what is your name": "I'm your personal chatbot!",
+}
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    data = request.json
+    message = data.get('message', '').lower()
+    response = responses.get(message, "I'm sorry, I don't understand that.")
+    return jsonify({"response": response})
+
+if _name_ == '_main_':
+    app.run(debug=True)
